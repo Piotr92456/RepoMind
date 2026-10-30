@@ -1,0 +1,1513 @@
+[ {
+  "name" : "MigrateH2ToPg",
+  "qualifiedName" : ".MigrateH2ToPg",
+  "packageName" : "",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "AmlBeneficiary",
+  "qualifiedName" : "dev.marszalek.format.docs.aml.AmlBeneficiary",
+  "packageName" : "dev.marszalek.format.docs.aml",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "AmlData",
+  "qualifiedName" : "dev.marszalek.format.docs.aml.AmlData",
+  "packageName" : "dev.marszalek.format.docs.aml",
+  "type" : "CLASS",
+  "superClass" : "DocumentData",
+  "interfaces" : [ ]
+}, {
+  "name" : "PasswordChangeCallback",
+  "qualifiedName" : "dev.marszalek.format.docs.callbacks.PasswordChangeCallback",
+  "packageName" : "dev.marszalek.format.docs.callbacks",
+  "type" : "INTERFACE",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "Const",
+  "qualifiedName" : "dev.marszalek.format.docs.common.Const",
+  "packageName" : "dev.marszalek.format.docs.common",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "DescriptionEnum",
+  "qualifiedName" : "dev.marszalek.format.docs.common.DescriptionEnum",
+  "packageName" : "dev.marszalek.format.docs.common",
+  "type" : "INTERFACE",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "DocumentData",
+  "qualifiedName" : "dev.marszalek.format.docs.common.DocumentData",
+  "packageName" : "dev.marszalek.format.docs.common",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "NounEnum",
+  "qualifiedName" : "dev.marszalek.format.docs.common.NounEnum",
+  "packageName" : "dev.marszalek.format.docs.common",
+  "type" : "INTERFACE",
+  "superClass" : "DescriptionEnum",
+  "interfaces" : [ ]
+}, {
+  "name" : "ClipboardHelper",
+  "qualifiedName" : "dev.marszalek.format.docs.components.ClipboardHelper",
+  "packageName" : "dev.marszalek.format.docs.components",
+  "type" : "CLASS",
+  "superClass" : "LitTemplate",
+  "interfaces" : [ ]
+}, {
+  "name" : "BinderCrudForm",
+  "qualifiedName" : "dev.marszalek.format.docs.components.crud.BinderCrudForm",
+  "packageName" : "dev.marszalek.format.docs.components.crud",
+  "type" : "CLASS",
+  "superClass" : "Composite",
+  "interfaces" : [ "CrudForm" ]
+}, {
+  "name" : "BinderCrudFormFactory",
+  "qualifiedName" : "dev.marszalek.format.docs.components.crud.BinderCrudFormFactory",
+  "packageName" : "dev.marszalek.format.docs.components.crud",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ "CrudFormFactory" ]
+}, {
+  "name" : "Cruds",
+  "qualifiedName" : "dev.marszalek.format.docs.components.crud.Cruds",
+  "packageName" : "dev.marszalek.format.docs.components.crud",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "DocumentSection",
+  "qualifiedName" : "dev.marszalek.format.docs.components.DocumentSection",
+  "packageName" : "dev.marszalek.format.docs.components",
+  "type" : "CLASS",
+  "superClass" : "VerticalLayout",
+  "interfaces" : [ ]
+}, {
+  "name" : "FormatDocsDownloader",
+  "qualifiedName" : "dev.marszalek.format.docs.components.FormatDocsDownloader",
+  "packageName" : "dev.marszalek.format.docs.components",
+  "type" : "CLASS",
+  "superClass" : "Anchor",
+  "interfaces" : [ "FluentComponent", "FluentHasEnabled", "FluentHasTooltip" ]
+}, {
+  "name" : "PolishDatePicker",
+  "qualifiedName" : "dev.marszalek.format.docs.components.PolishDatePicker",
+  "packageName" : "dev.marszalek.format.docs.components",
+  "type" : "CLASS",
+  "superClass" : "DatePicker",
+  "interfaces" : [ ]
+}, {
+  "name" : "QuestionComponent",
+  "qualifiedName" : "dev.marszalek.format.docs.components.QuestionComponent",
+  "packageName" : "dev.marszalek.format.docs.components",
+  "type" : "CLASS",
+  "superClass" : "VerticalLayout",
+  "interfaces" : [ ]
+}, {
+  "name" : "ApplicationServiceInitListener",
+  "qualifiedName" : "dev.marszalek.format.docs.config.ApplicationServiceInitListener",
+  "packageName" : "dev.marszalek.format.docs.config",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ "VaadinServiceInitListener" ]
+}, {
+  "name" : "FlywayConfig",
+  "qualifiedName" : "dev.marszalek.format.docs.config.FlywayConfig",
+  "packageName" : "dev.marszalek.format.docs.config",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "FormatDocsErrorHandler",
+  "qualifiedName" : "dev.marszalek.format.docs.config.FormatDocsErrorHandler",
+  "packageName" : "dev.marszalek.format.docs.config",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ "ErrorHandler" ]
+}, {
+  "name" : "FormatDocsProperties",
+  "qualifiedName" : "dev.marszalek.format.docs.config.FormatDocsProperties",
+  "packageName" : "dev.marszalek.format.docs.config",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "CyberData",
+  "qualifiedName" : "dev.marszalek.format.docs.cyber.CyberData",
+  "packageName" : "dev.marszalek.format.docs.cyber",
+  "type" : "CLASS",
+  "superClass" : "DocumentData",
+  "interfaces" : [ ]
+}, {
+  "name" : "DocumentDto",
+  "qualifiedName" : "dev.marszalek.format.docs.data.dto.DocumentDto",
+  "packageName" : "dev.marszalek.format.docs.data.dto",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ "Serializable" ]
+}, {
+  "name" : "DocumentRecordDto",
+  "qualifiedName" : "dev.marszalek.format.docs.data.dto.DocumentRecordDto",
+  "packageName" : "dev.marszalek.format.docs.data.dto",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ "Serializable" ]
+}, {
+  "name" : "OfficeDto",
+  "qualifiedName" : "dev.marszalek.format.docs.data.dto.OfficeDto",
+  "packageName" : "dev.marszalek.format.docs.data.dto",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ "Serializable" ]
+}, {
+  "name" : "UserSettingsData",
+  "qualifiedName" : "dev.marszalek.format.docs.data.dto.UserSettingsData",
+  "packageName" : "dev.marszalek.format.docs.data.dto",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "Answer",
+  "qualifiedName" : "dev.marszalek.format.docs.data.entity.Answer",
+  "packageName" : "dev.marszalek.format.docs.data.entity",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ "Persistable" ]
+}, {
+  "name" : "AnswerParameterGet",
+  "qualifiedName" : "dev.marszalek.format.docs.data.entity.AnswerParameterGet",
+  "packageName" : "dev.marszalek.format.docs.data.entity",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ "Persistable" ]
+}, {
+  "name" : "AnswerParameterSet",
+  "qualifiedName" : "dev.marszalek.format.docs.data.entity.AnswerParameterSet",
+  "packageName" : "dev.marszalek.format.docs.data.entity",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ "Persistable" ]
+}, {
+  "name" : "AppProperty",
+  "qualifiedName" : "dev.marszalek.format.docs.data.entity.AppProperty",
+  "packageName" : "dev.marszalek.format.docs.data.entity",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "Document",
+  "qualifiedName" : "dev.marszalek.format.docs.data.entity.Document",
+  "packageName" : "dev.marszalek.format.docs.data.entity",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "DocumentRecord",
+  "qualifiedName" : "dev.marszalek.format.docs.data.entity.DocumentRecord",
+  "packageName" : "dev.marszalek.format.docs.data.entity",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "MailTemplate",
+  "qualifiedName" : "dev.marszalek.format.docs.data.entity.MailTemplate",
+  "packageName" : "dev.marszalek.format.docs.data.entity",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "Office",
+  "qualifiedName" : "dev.marszalek.format.docs.data.entity.Office",
+  "packageName" : "dev.marszalek.format.docs.data.entity",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "Parameter",
+  "qualifiedName" : "dev.marszalek.format.docs.data.entity.Parameter",
+  "packageName" : "dev.marszalek.format.docs.data.entity",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "Question",
+  "qualifiedName" : "dev.marszalek.format.docs.data.entity.Question",
+  "packageName" : "dev.marszalek.format.docs.data.entity",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ "Persistable" ]
+}, {
+  "name" : "Recommendation",
+  "qualifiedName" : "dev.marszalek.format.docs.data.entity.Recommendation",
+  "packageName" : "dev.marszalek.format.docs.data.entity",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ "Persistable" ]
+}, {
+  "name" : "RodoDictDataset",
+  "qualifiedName" : "dev.marszalek.format.docs.data.entity.RodoDictDataset",
+  "packageName" : "dev.marszalek.format.docs.data.entity",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "RodoDictMeasure",
+  "qualifiedName" : "dev.marszalek.format.docs.data.entity.RodoDictMeasure",
+  "packageName" : "dev.marszalek.format.docs.data.entity",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "RodoDictMonitoring",
+  "qualifiedName" : "dev.marszalek.format.docs.data.entity.RodoDictMonitoring",
+  "packageName" : "dev.marszalek.format.docs.data.entity",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "RodoDictRisk",
+  "qualifiedName" : "dev.marszalek.format.docs.data.entity.RodoDictRisk",
+  "packageName" : "dev.marszalek.format.docs.data.entity",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "RodoDictScope",
+  "qualifiedName" : "dev.marszalek.format.docs.data.entity.RodoDictScope",
+  "packageName" : "dev.marszalek.format.docs.data.entity",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "Role",
+  "qualifiedName" : "dev.marszalek.format.docs.data.entity.Role",
+  "packageName" : "dev.marszalek.format.docs.data.entity",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "Section",
+  "qualifiedName" : "dev.marszalek.format.docs.data.entity.Section",
+  "packageName" : "dev.marszalek.format.docs.data.entity",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ "Persistable" ]
+}, {
+  "name" : "StaticText",
+  "qualifiedName" : "dev.marszalek.format.docs.data.entity.StaticText",
+  "packageName" : "dev.marszalek.format.docs.data.entity",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ "Persistable" ]
+}, {
+  "name" : "SysInfo",
+  "qualifiedName" : "dev.marszalek.format.docs.data.entity.SysInfo",
+  "packageName" : "dev.marszalek.format.docs.data.entity",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "User",
+  "qualifiedName" : "dev.marszalek.format.docs.data.entity.User",
+  "packageName" : "dev.marszalek.format.docs.data.entity",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "UserSettings",
+  "qualifiedName" : "dev.marszalek.format.docs.data.entity.UserSettings",
+  "packageName" : "dev.marszalek.format.docs.data.entity",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "AnswerParameterGetRepository",
+  "qualifiedName" : "dev.marszalek.format.docs.data.repository.AnswerParameterGetRepository",
+  "packageName" : "dev.marszalek.format.docs.data.repository",
+  "type" : "INTERFACE",
+  "superClass" : "JpaRepository",
+  "interfaces" : [ ]
+}, {
+  "name" : "AnswerParameterSetRepository",
+  "qualifiedName" : "dev.marszalek.format.docs.data.repository.AnswerParameterSetRepository",
+  "packageName" : "dev.marszalek.format.docs.data.repository",
+  "type" : "INTERFACE",
+  "superClass" : "JpaRepository",
+  "interfaces" : [ ]
+}, {
+  "name" : "AnswerRepository",
+  "qualifiedName" : "dev.marszalek.format.docs.data.repository.AnswerRepository",
+  "packageName" : "dev.marszalek.format.docs.data.repository",
+  "type" : "INTERFACE",
+  "superClass" : "JpaRepository",
+  "interfaces" : [ ]
+}, {
+  "name" : "AppPropertyRepository",
+  "qualifiedName" : "dev.marszalek.format.docs.data.repository.AppPropertyRepository",
+  "packageName" : "dev.marszalek.format.docs.data.repository",
+  "type" : "INTERFACE",
+  "superClass" : "JpaRepository",
+  "interfaces" : [ ]
+}, {
+  "name" : "DocumentRecordRepository",
+  "qualifiedName" : "dev.marszalek.format.docs.data.repository.DocumentRecordRepository",
+  "packageName" : "dev.marszalek.format.docs.data.repository",
+  "type" : "INTERFACE",
+  "superClass" : "JpaRepository",
+  "interfaces" : [ ]
+}, {
+  "name" : "DocumentRepository",
+  "qualifiedName" : "dev.marszalek.format.docs.data.repository.DocumentRepository",
+  "packageName" : "dev.marszalek.format.docs.data.repository",
+  "type" : "INTERFACE",
+  "superClass" : "JpaRepository",
+  "interfaces" : [ ]
+}, {
+  "name" : "MailTemplateRepository",
+  "qualifiedName" : "dev.marszalek.format.docs.data.repository.MailTemplateRepository",
+  "packageName" : "dev.marszalek.format.docs.data.repository",
+  "type" : "INTERFACE",
+  "superClass" : "JpaRepository",
+  "interfaces" : [ ]
+}, {
+  "name" : "OfficeRepository",
+  "qualifiedName" : "dev.marszalek.format.docs.data.repository.OfficeRepository",
+  "packageName" : "dev.marszalek.format.docs.data.repository",
+  "type" : "INTERFACE",
+  "superClass" : "JpaRepository",
+  "interfaces" : [ ]
+}, {
+  "name" : "ParameterRepository",
+  "qualifiedName" : "dev.marszalek.format.docs.data.repository.ParameterRepository",
+  "packageName" : "dev.marszalek.format.docs.data.repository",
+  "type" : "INTERFACE",
+  "superClass" : "JpaRepository",
+  "interfaces" : [ ]
+}, {
+  "name" : "QuestionRepository",
+  "qualifiedName" : "dev.marszalek.format.docs.data.repository.QuestionRepository",
+  "packageName" : "dev.marszalek.format.docs.data.repository",
+  "type" : "INTERFACE",
+  "superClass" : "JpaRepository",
+  "interfaces" : [ ]
+}, {
+  "name" : "RecommendationRepository",
+  "qualifiedName" : "dev.marszalek.format.docs.data.repository.RecommendationRepository",
+  "packageName" : "dev.marszalek.format.docs.data.repository",
+  "type" : "INTERFACE",
+  "superClass" : "JpaRepository",
+  "interfaces" : [ ]
+}, {
+  "name" : "RodoDictDatasetRepository",
+  "qualifiedName" : "dev.marszalek.format.docs.data.repository.RodoDictDatasetRepository",
+  "packageName" : "dev.marszalek.format.docs.data.repository",
+  "type" : "INTERFACE",
+  "superClass" : "JpaRepository",
+  "interfaces" : [ ]
+}, {
+  "name" : "RodoDictMeasureRepository",
+  "qualifiedName" : "dev.marszalek.format.docs.data.repository.RodoDictMeasureRepository",
+  "packageName" : "dev.marszalek.format.docs.data.repository",
+  "type" : "INTERFACE",
+  "superClass" : "JpaRepository",
+  "interfaces" : [ ]
+}, {
+  "name" : "RodoDictMonitoringRepository",
+  "qualifiedName" : "dev.marszalek.format.docs.data.repository.RodoDictMonitoringRepository",
+  "packageName" : "dev.marszalek.format.docs.data.repository",
+  "type" : "INTERFACE",
+  "superClass" : "JpaRepository",
+  "interfaces" : [ ]
+}, {
+  "name" : "RodoDictRiskRepository",
+  "qualifiedName" : "dev.marszalek.format.docs.data.repository.RodoDictRiskRepository",
+  "packageName" : "dev.marszalek.format.docs.data.repository",
+  "type" : "INTERFACE",
+  "superClass" : "JpaRepository",
+  "interfaces" : [ ]
+}, {
+  "name" : "RodoDictScopeRepository",
+  "qualifiedName" : "dev.marszalek.format.docs.data.repository.RodoDictScopeRepository",
+  "packageName" : "dev.marszalek.format.docs.data.repository",
+  "type" : "INTERFACE",
+  "superClass" : "JpaRepository",
+  "interfaces" : [ ]
+}, {
+  "name" : "RoleRepository",
+  "qualifiedName" : "dev.marszalek.format.docs.data.repository.RoleRepository",
+  "packageName" : "dev.marszalek.format.docs.data.repository",
+  "type" : "INTERFACE",
+  "superClass" : "JpaRepository",
+  "interfaces" : [ ]
+}, {
+  "name" : "SectionRepository",
+  "qualifiedName" : "dev.marszalek.format.docs.data.repository.SectionRepository",
+  "packageName" : "dev.marszalek.format.docs.data.repository",
+  "type" : "INTERFACE",
+  "superClass" : "JpaRepository",
+  "interfaces" : [ ]
+}, {
+  "name" : "StaticTextRepository",
+  "qualifiedName" : "dev.marszalek.format.docs.data.repository.StaticTextRepository",
+  "packageName" : "dev.marszalek.format.docs.data.repository",
+  "type" : "INTERFACE",
+  "superClass" : "JpaRepository",
+  "interfaces" : [ ]
+}, {
+  "name" : "UserRepository",
+  "qualifiedName" : "dev.marszalek.format.docs.data.repository.UserRepository",
+  "packageName" : "dev.marszalek.format.docs.data.repository",
+  "type" : "INTERFACE",
+  "superClass" : "JpaRepository",
+  "interfaces" : [ ]
+}, {
+  "name" : "UserSettingsRepository",
+  "qualifiedName" : "dev.marszalek.format.docs.data.repository.UserSettingsRepository",
+  "packageName" : "dev.marszalek.format.docs.data.repository",
+  "type" : "INTERFACE",
+  "superClass" : "JpaRepository",
+  "interfaces" : [ ]
+}, {
+  "name" : "AnswerItem",
+  "qualifiedName" : "dev.marszalek.format.docs.document.AnswerItem",
+  "packageName" : "dev.marszalek.format.docs.document",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ "Serializable" ]
+}, {
+  "name" : "DocumentSettings",
+  "qualifiedName" : "dev.marszalek.format.docs.document.DocumentSettings",
+  "packageName" : "dev.marszalek.format.docs.document",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ "Serializable" ]
+}, {
+  "name" : "DocumentUtils",
+  "qualifiedName" : "dev.marszalek.format.docs.document.DocumentUtils",
+  "packageName" : "dev.marszalek.format.docs.document",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "RecordData",
+  "qualifiedName" : "dev.marszalek.format.docs.document.RecordData",
+  "packageName" : "dev.marszalek.format.docs.document",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ "Serializable" ]
+}, {
+  "name" : "ReportData",
+  "qualifiedName" : "dev.marszalek.format.docs.document.ReportData",
+  "packageName" : "dev.marszalek.format.docs.document",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "SectionParagraphs",
+  "qualifiedName" : "dev.marszalek.format.docs.document.SectionParagraphs",
+  "packageName" : "dev.marszalek.format.docs.document",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "StopDownloadException",
+  "qualifiedName" : "dev.marszalek.format.docs.exception.StopDownloadException",
+  "packageName" : "dev.marszalek.format.docs.exception",
+  "type" : "CLASS",
+  "superClass" : "RuntimeException",
+  "interfaces" : [ ]
+}, {
+  "name" : "AnswerStyle",
+  "qualifiedName" : "dev.marszalek.format.docs.generator.AnswerStyle",
+  "packageName" : "dev.marszalek.format.docs.generator",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "DocumentProcessor2",
+  "qualifiedName" : "dev.marszalek.format.docs.generator.DocumentProcessor2",
+  "packageName" : "dev.marszalek.format.docs.generator",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "DocumentProcessorData",
+  "qualifiedName" : "dev.marszalek.format.docs.generator.DocumentProcessorData",
+  "packageName" : "dev.marszalek.format.docs.generator",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "DocxDocumentProcessor2",
+  "qualifiedName" : "dev.marszalek.format.docs.generator.DocxDocumentProcessor2",
+  "packageName" : "dev.marszalek.format.docs.generator",
+  "type" : "CLASS",
+  "superClass" : "DocumentProcessor2",
+  "interfaces" : [ ]
+}, {
+  "name" : "OdtDocumentProcessor2",
+  "qualifiedName" : "dev.marszalek.format.docs.generator.OdtDocumentProcessor2",
+  "packageName" : "dev.marszalek.format.docs.generator",
+  "type" : "CLASS",
+  "superClass" : "DocumentProcessor2",
+  "interfaces" : [ ]
+}, {
+  "name" : "RodoDocxTemplateProcessor",
+  "qualifiedName" : "dev.marszalek.format.docs.generator.RodoDocxTemplateProcessor",
+  "packageName" : "dev.marszalek.format.docs.generator",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "RodoOdtTemplateProcessor",
+  "qualifiedName" : "dev.marszalek.format.docs.generator.RodoOdtTemplateProcessor",
+  "packageName" : "dev.marszalek.format.docs.generator",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "RodoTemplateModel",
+  "qualifiedName" : "dev.marszalek.format.docs.generator.RodoTemplateModel",
+  "packageName" : "dev.marszalek.format.docs.generator",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "TagAttributes",
+  "qualifiedName" : "dev.marszalek.format.docs.generator.TagAttributes",
+  "packageName" : "dev.marszalek.format.docs.generator",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "XlsData",
+  "qualifiedName" : "dev.marszalek.format.docs.generator.XlsData",
+  "packageName" : "dev.marszalek.format.docs.generator",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "XlsDocumentGenerator",
+  "qualifiedName" : "dev.marszalek.format.docs.generator.XlsDocumentGenerator",
+  "packageName" : "dev.marszalek.format.docs.generator",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "InteractiveDocumentsApplication",
+  "qualifiedName" : "dev.marszalek.format.docs.InteractiveDocumentsApplication",
+  "packageName" : "dev.marszalek.format.docs",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ "AppShellConfigurator" ]
+}, {
+  "name" : "RodoArea",
+  "qualifiedName" : "dev.marszalek.format.docs.rodo.RodoArea",
+  "packageName" : "dev.marszalek.format.docs.rodo",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "RodoClause",
+  "qualifiedName" : "dev.marszalek.format.docs.rodo.RodoClause",
+  "packageName" : "dev.marszalek.format.docs.rodo",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "RodoData",
+  "qualifiedName" : "dev.marszalek.format.docs.rodo.RodoData",
+  "packageName" : "dev.marszalek.format.docs.rodo",
+  "type" : "CLASS",
+  "superClass" : "DocumentData",
+  "interfaces" : [ ]
+}, {
+  "name" : "RodoDataset",
+  "qualifiedName" : "dev.marszalek.format.docs.rodo.RodoDataset",
+  "packageName" : "dev.marszalek.format.docs.rodo",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "RodoFileEntry",
+  "qualifiedName" : "dev.marszalek.format.docs.rodo.RodoFileEntry",
+  "packageName" : "dev.marszalek.format.docs.rodo",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "RodoMeasure",
+  "qualifiedName" : "dev.marszalek.format.docs.rodo.RodoMeasure",
+  "packageName" : "dev.marszalek.format.docs.rodo",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ "RodoSimpleDict" ]
+}, {
+  "name" : "RodoMonitoring",
+  "qualifiedName" : "dev.marszalek.format.docs.rodo.RodoMonitoring",
+  "packageName" : "dev.marszalek.format.docs.rodo",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ "RodoSimpleDict" ]
+}, {
+  "name" : "RodoRegistry",
+  "qualifiedName" : "dev.marszalek.format.docs.rodo.RodoRegistry",
+  "packageName" : "dev.marszalek.format.docs.rodo",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "RodoRisk",
+  "qualifiedName" : "dev.marszalek.format.docs.rodo.RodoRisk",
+  "packageName" : "dev.marszalek.format.docs.rodo",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "RodoScope",
+  "qualifiedName" : "dev.marszalek.format.docs.rodo.RodoScope",
+  "packageName" : "dev.marszalek.format.docs.rodo",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "RodoSimpleDict",
+  "qualifiedName" : "dev.marszalek.format.docs.rodo.RodoSimpleDict",
+  "packageName" : "dev.marszalek.format.docs.rodo",
+  "type" : "INTERFACE",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "AuthenticatedUser",
+  "qualifiedName" : "dev.marszalek.format.docs.security.AuthenticatedUser",
+  "packageName" : "dev.marszalek.format.docs.security",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "SecurityConfig",
+  "qualifiedName" : "dev.marszalek.format.docs.security.SecurityConfig",
+  "packageName" : "dev.marszalek.format.docs.security",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "UserDetailsServiceImpl",
+  "qualifiedName" : "dev.marszalek.format.docs.security.UserDetailsServiceImpl",
+  "packageName" : "dev.marszalek.format.docs.security",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ "UserDetailsService" ]
+}, {
+  "name" : "AppPropertyService",
+  "qualifiedName" : "dev.marszalek.format.docs.services.AppPropertyService",
+  "packageName" : "dev.marszalek.format.docs.services",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "CrudOperationException",
+  "qualifiedName" : "dev.marszalek.format.docs.services.CrudOperationException",
+  "packageName" : "dev.marszalek.format.docs.services",
+  "type" : "CLASS",
+  "superClass" : "RuntimeException",
+  "interfaces" : [ ]
+}, {
+  "name" : "DocumentRecordService",
+  "qualifiedName" : "dev.marszalek.format.docs.services.DocumentRecordService",
+  "packageName" : "dev.marszalek.format.docs.services",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "DocumentService",
+  "qualifiedName" : "dev.marszalek.format.docs.services.DocumentService",
+  "packageName" : "dev.marszalek.format.docs.services",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "MailService",
+  "qualifiedName" : "dev.marszalek.format.docs.services.MailService",
+  "packageName" : "dev.marszalek.format.docs.services",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "MailTemplateService",
+  "qualifiedName" : "dev.marszalek.format.docs.services.MailTemplateService",
+  "packageName" : "dev.marszalek.format.docs.services",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "OfficeService",
+  "qualifiedName" : "dev.marszalek.format.docs.services.OfficeService",
+  "packageName" : "dev.marszalek.format.docs.services",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "RodoDictService",
+  "qualifiedName" : "dev.marszalek.format.docs.services.RodoDictService",
+  "packageName" : "dev.marszalek.format.docs.services",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "RoleService",
+  "qualifiedName" : "dev.marszalek.format.docs.services.RoleService",
+  "packageName" : "dev.marszalek.format.docs.services",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "UserHasDocumentRecordsException",
+  "qualifiedName" : "dev.marszalek.format.docs.services.UserHasDocumentRecordsException",
+  "packageName" : "dev.marszalek.format.docs.services",
+  "type" : "CLASS",
+  "superClass" : "RuntimeException",
+  "interfaces" : [ ]
+}, {
+  "name" : "UserService",
+  "qualifiedName" : "dev.marszalek.format.docs.services.UserService",
+  "packageName" : "dev.marszalek.format.docs.services",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "UserSettingsService",
+  "qualifiedName" : "dev.marszalek.format.docs.services.UserSettingsService",
+  "packageName" : "dev.marszalek.format.docs.services",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "SimpleProcedureData",
+  "qualifiedName" : "dev.marszalek.format.docs.simple_procedure.SimpleProcedureData",
+  "packageName" : "dev.marszalek.format.docs.simple_procedure",
+  "type" : "CLASS",
+  "superClass" : "DocumentData",
+  "interfaces" : [ ]
+}, {
+  "name" : "DocParameterUtils",
+  "qualifiedName" : "dev.marszalek.format.docs.utils.DocParameterUtils",
+  "packageName" : "dev.marszalek.format.docs.utils",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "FormCreator",
+  "qualifiedName" : "dev.marszalek.format.docs.utils.FormCreator",
+  "packageName" : "dev.marszalek.format.docs.utils",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "FormUtils",
+  "qualifiedName" : "dev.marszalek.format.docs.utils.FormUtils",
+  "packageName" : "dev.marszalek.format.docs.utils",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "NotificationUtils",
+  "qualifiedName" : "dev.marszalek.format.docs.utils.NotificationUtils",
+  "packageName" : "dev.marszalek.format.docs.utils",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "OdtMetadata",
+  "qualifiedName" : "dev.marszalek.format.docs.utils.OdtMetadata",
+  "packageName" : "dev.marszalek.format.docs.utils",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "PageableUtils",
+  "qualifiedName" : "dev.marszalek.format.docs.utils.PageableUtils",
+  "packageName" : "dev.marszalek.format.docs.utils",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "PathReference",
+  "qualifiedName" : "dev.marszalek.format.docs.utils.PathReference",
+  "packageName" : "dev.marszalek.format.docs.utils",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ "AutoCloseable" ]
+}, {
+  "name" : "PolishDate",
+  "qualifiedName" : "dev.marszalek.format.docs.utils.PolishDate",
+  "packageName" : "dev.marszalek.format.docs.utils",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "ResourceUtils",
+  "qualifiedName" : "dev.marszalek.format.docs.utils.ResourceUtils",
+  "packageName" : "dev.marszalek.format.docs.utils",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "SerializeUtils",
+  "qualifiedName" : "dev.marszalek.format.docs.utils.SerializeUtils",
+  "packageName" : "dev.marszalek.format.docs.utils",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "TemplateUtils",
+  "qualifiedName" : "dev.marszalek.format.docs.utils.TemplateUtils",
+  "packageName" : "dev.marszalek.format.docs.utils",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "ViewUtils",
+  "qualifiedName" : "dev.marszalek.format.docs.utils.ViewUtils",
+  "packageName" : "dev.marszalek.format.docs.utils",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "AboutView",
+  "qualifiedName" : "dev.marszalek.format.docs.views.about.AboutView",
+  "packageName" : "dev.marszalek.format.docs.views.about",
+  "type" : "CLASS",
+  "superClass" : "VerticalLayout",
+  "interfaces" : [ ]
+}, {
+  "name" : "MailTemplatesView",
+  "qualifiedName" : "dev.marszalek.format.docs.views.admin.MailTemplatesView",
+  "packageName" : "dev.marszalek.format.docs.views.admin",
+  "type" : "CLASS",
+  "superClass" : "Div",
+  "interfaces" : [ ]
+}, {
+  "name" : "OfficeListView",
+  "qualifiedName" : "dev.marszalek.format.docs.views.admin.OfficeListView",
+  "packageName" : "dev.marszalek.format.docs.views.admin",
+  "type" : "CLASS",
+  "superClass" : "Div",
+  "interfaces" : [ ]
+}, {
+  "name" : "PropertiesView",
+  "qualifiedName" : "dev.marszalek.format.docs.views.admin.PropertiesView",
+  "packageName" : "dev.marszalek.format.docs.views.admin",
+  "type" : "CLASS",
+  "superClass" : "Div",
+  "interfaces" : [ ]
+}, {
+  "name" : "UserListView",
+  "qualifiedName" : "dev.marszalek.format.docs.views.admin.UserListView",
+  "packageName" : "dev.marszalek.format.docs.views.admin",
+  "type" : "CLASS",
+  "superClass" : "Div",
+  "interfaces" : [ ]
+}, {
+  "name" : "WaitDialog",
+  "qualifiedName" : "dev.marszalek.format.docs.views.common.WaitDialog",
+  "packageName" : "dev.marszalek.format.docs.views.common",
+  "type" : "CLASS",
+  "superClass" : "Dialog",
+  "interfaces" : [ ]
+}, {
+  "name" : "DirectorReportView",
+  "qualifiedName" : "dev.marszalek.format.docs.views.directorreport.DirectorReportView",
+  "packageName" : "dev.marszalek.format.docs.views.directorreport",
+  "type" : "CLASS",
+  "superClass" : "Composite",
+  "interfaces" : [ ]
+}, {
+  "name" : "AbstractCyberDocumentView",
+  "qualifiedName" : "dev.marszalek.format.docs.views.document.AbstractCyberDocumentView",
+  "packageName" : "dev.marszalek.format.docs.views.document",
+  "type" : "CLASS",
+  "superClass" : "AbstractTemplateDocumentView",
+  "interfaces" : [ ]
+}, {
+  "name" : "AbstractDocumentView",
+  "qualifiedName" : "dev.marszalek.format.docs.views.document.AbstractDocumentView",
+  "packageName" : "dev.marszalek.format.docs.views.document",
+  "type" : "CLASS",
+  "superClass" : "Composite",
+  "interfaces" : [ "BeforeEnterObserver", "HasDynamicTitle" ]
+}, {
+  "name" : "AbstractReportDocumentView",
+  "qualifiedName" : "dev.marszalek.format.docs.views.document.AbstractReportDocumentView",
+  "packageName" : "dev.marszalek.format.docs.views.document",
+  "type" : "CLASS",
+  "superClass" : "AbstractDocumentView",
+  "interfaces" : [ ]
+}, {
+  "name" : "AbstractSimpleDocumentView",
+  "qualifiedName" : "dev.marszalek.format.docs.views.document.AbstractSimpleDocumentView",
+  "packageName" : "dev.marszalek.format.docs.views.document",
+  "type" : "CLASS",
+  "superClass" : "AbstractTemplateDocumentView",
+  "interfaces" : [ ]
+}, {
+  "name" : "AbstractTemplateDocumentView",
+  "qualifiedName" : "dev.marszalek.format.docs.views.document.AbstractTemplateDocumentView",
+  "packageName" : "dev.marszalek.format.docs.views.document",
+  "type" : "CLASS",
+  "superClass" : "AbstractDocumentView",
+  "interfaces" : [ ]
+}, {
+  "name" : "AmlDocumentView",
+  "qualifiedName" : "dev.marszalek.format.docs.views.document.AmlDocumentView",
+  "packageName" : "dev.marszalek.format.docs.views.document",
+  "type" : "CLASS",
+  "superClass" : "AbstractSimpleDocumentView",
+  "interfaces" : [ ]
+}, {
+  "name" : "CyberPrivDocumentView",
+  "qualifiedName" : "dev.marszalek.format.docs.views.document.CyberPrivDocumentView",
+  "packageName" : "dev.marszalek.format.docs.views.document",
+  "type" : "CLASS",
+  "superClass" : "AbstractCyberDocumentView",
+  "interfaces" : [ ]
+}, {
+  "name" : "CyberPublicDocumentView",
+  "qualifiedName" : "dev.marszalek.format.docs.views.document.CyberPublicDocumentView",
+  "packageName" : "dev.marszalek.format.docs.views.document",
+  "type" : "CLASS",
+  "superClass" : "AbstractCyberDocumentView",
+  "interfaces" : [ ]
+}, {
+  "name" : "ProcedureWithAttachmentsDocumentView",
+  "qualifiedName" : "dev.marszalek.format.docs.views.document.ProcedureWithAttachmentsDocumentView",
+  "packageName" : "dev.marszalek.format.docs.views.document",
+  "type" : "CLASS",
+  "superClass" : "AbstractTemplateDocumentView",
+  "interfaces" : [ ]
+}, {
+  "name" : "Report2DocumentView",
+  "qualifiedName" : "dev.marszalek.format.docs.views.document.Report2DocumentView",
+  "packageName" : "dev.marszalek.format.docs.views.document",
+  "type" : "CLASS",
+  "superClass" : "AbstractReportDocumentView",
+  "interfaces" : [ ]
+}, {
+  "name" : "RodoDocumentView",
+  "qualifiedName" : "dev.marszalek.format.docs.views.document.RodoDocumentView",
+  "packageName" : "dev.marszalek.format.docs.views.document",
+  "type" : "CLASS",
+  "superClass" : "AbstractTemplateDocumentView",
+  "interfaces" : [ ]
+}, {
+  "name" : "RodoQuestionsView",
+  "qualifiedName" : "dev.marszalek.format.docs.views.document.RodoQuestionsView",
+  "packageName" : "dev.marszalek.format.docs.views.document",
+  "type" : "CLASS",
+  "superClass" : "Composite",
+  "interfaces" : [ "BeforeEnterObserver", "HasDynamicTitle" ]
+}, {
+  "name" : "SimpleProcedureDocumentView",
+  "qualifiedName" : "dev.marszalek.format.docs.views.document.SimpleProcedureDocumentView",
+  "packageName" : "dev.marszalek.format.docs.views.document",
+  "type" : "CLASS",
+  "superClass" : "AbstractSimpleDocumentView",
+  "interfaces" : [ ]
+}, {
+  "name" : "WhistleblowerDocumentView",
+  "qualifiedName" : "dev.marszalek.format.docs.views.document.WhistleblowerDocumentView",
+  "packageName" : "dev.marszalek.format.docs.views.document",
+  "type" : "CLASS",
+  "superClass" : "AbstractSimpleDocumentView",
+  "interfaces" : [ ]
+}, {
+  "name" : "DocumentListView",
+  "qualifiedName" : "dev.marszalek.format.docs.views.documentlist.DocumentListView",
+  "packageName" : "dev.marszalek.format.docs.views.documentlist",
+  "type" : "CLASS",
+  "superClass" : "Div",
+  "interfaces" : [ "BeforeEnterObserver" ]
+}, {
+  "name" : "DocumentRecordsFiltersView",
+  "qualifiedName" : "dev.marszalek.format.docs.views.documentrecords.DocumentRecordsFiltersView",
+  "packageName" : "dev.marszalek.format.docs.views.documentrecords",
+  "type" : "CLASS",
+  "superClass" : "Div",
+  "interfaces" : [ "Specification" ]
+}, {
+  "name" : "DocumentRecordsView",
+  "qualifiedName" : "dev.marszalek.format.docs.views.documentrecords.DocumentRecordsView",
+  "packageName" : "dev.marszalek.format.docs.views.documentrecords",
+  "type" : "CLASS",
+  "superClass" : "Composite",
+  "interfaces" : [ "BeforeEnterObserver", "HasDynamicTitle" ]
+}, {
+  "name" : "DocsChangePasswordDialog",
+  "qualifiedName" : "dev.marszalek.format.docs.views.login.DocsChangePasswordDialog",
+  "packageName" : "dev.marszalek.format.docs.views.login",
+  "type" : "CLASS",
+  "superClass" : "ChangePasswordDialog",
+  "interfaces" : [ ]
+}, {
+  "name" : "DocsNewPasswordDialog",
+  "qualifiedName" : "dev.marszalek.format.docs.views.login.DocsNewPasswordDialog",
+  "packageName" : "dev.marszalek.format.docs.views.login",
+  "type" : "CLASS",
+  "superClass" : "ChangePasswordDialog",
+  "interfaces" : [ ]
+}, {
+  "name" : "LoginView",
+  "qualifiedName" : "dev.marszalek.format.docs.views.login.LoginView",
+  "packageName" : "dev.marszalek.format.docs.views.login",
+  "type" : "CLASS",
+  "superClass" : "LoginOverlay",
+  "interfaces" : [ "BeforeEnterObserver" ]
+}, {
+  "name" : "MainLayout",
+  "qualifiedName" : "dev.marszalek.format.docs.views.MainLayout",
+  "packageName" : "dev.marszalek.format.docs.views",
+  "type" : "CLASS",
+  "superClass" : "AppLayout",
+  "interfaces" : [ "AfterNavigationObserver" ]
+}, {
+  "name" : "AmlQuestionsView",
+  "qualifiedName" : "dev.marszalek.format.docs.views.questions.AmlQuestionsView",
+  "packageName" : "dev.marszalek.format.docs.views.questions",
+  "type" : "CLASS",
+  "superClass" : "Composite",
+  "interfaces" : [ "BeforeEnterObserver", "HasDynamicTitle" ]
+}, {
+  "name" : "RodoDictDatasetListView",
+  "qualifiedName" : "dev.marszalek.format.docs.views.rododict.RodoDictDatasetListView",
+  "packageName" : "dev.marszalek.format.docs.views.rododict",
+  "type" : "CLASS",
+  "superClass" : "Div",
+  "interfaces" : [ ]
+}, {
+  "name" : "RodoDictMeasureListView",
+  "qualifiedName" : "dev.marszalek.format.docs.views.rododict.RodoDictMeasureListView",
+  "packageName" : "dev.marszalek.format.docs.views.rododict",
+  "type" : "CLASS",
+  "superClass" : "Div",
+  "interfaces" : [ ]
+}, {
+  "name" : "RodoDictRiskListView",
+  "qualifiedName" : "dev.marszalek.format.docs.views.rododict.RodoDictRiskListView",
+  "packageName" : "dev.marszalek.format.docs.views.rododict",
+  "type" : "CLASS",
+  "superClass" : "Div",
+  "interfaces" : [ ]
+}, {
+  "name" : "ValidationMessage",
+  "qualifiedName" : "dev.marszalek.format.docs.views.ValidationMessage",
+  "packageName" : "dev.marszalek.format.docs.views",
+  "type" : "CLASS",
+  "superClass" : "HorizontalLayout",
+  "interfaces" : [ "HasText" ]
+}, {
+  "name" : "WhistleblowerData",
+  "qualifiedName" : "dev.marszalek.format.docs.whistleblower.WhistleblowerData",
+  "packageName" : "dev.marszalek.format.docs.whistleblower",
+  "type" : "CLASS",
+  "superClass" : "DocumentData",
+  "interfaces" : [ ]
+}, {
+  "name" : "ApplicationContextTest",
+  "qualifiedName" : "dev.marszalek.format.docs.ApplicationContextTest",
+  "packageName" : "dev.marszalek.format.docs",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "CrudsTest",
+  "qualifiedName" : "dev.marszalek.format.docs.components.crud.CrudsTest",
+  "packageName" : "dev.marszalek.format.docs.components.crud",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "PostgresSchemaIT",
+  "qualifiedName" : "dev.marszalek.format.docs.db.PostgresSchemaIT",
+  "packageName" : "dev.marszalek.format.docs.db",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "DocumentProcessor2Test",
+  "qualifiedName" : "dev.marszalek.format.docs.generator.DocumentProcessor2Test",
+  "packageName" : "dev.marszalek.format.docs.generator",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "DocxSubstitutionTest",
+  "qualifiedName" : "dev.marszalek.format.docs.generator.DocxSubstitutionTest",
+  "packageName" : "dev.marszalek.format.docs.generator",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "DocxTemplateParsingIT",
+  "qualifiedName" : "dev.marszalek.format.docs.generator.DocxTemplateParsingIT",
+  "packageName" : "dev.marszalek.format.docs.generator",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "OdtPageBreakTest",
+  "qualifiedName" : "dev.marszalek.format.docs.generator.OdtPageBreakTest",
+  "packageName" : "dev.marszalek.format.docs.generator",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "OdtSectionsTest",
+  "qualifiedName" : "dev.marszalek.format.docs.generator.OdtSectionsTest",
+  "packageName" : "dev.marszalek.format.docs.generator",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "ReportGenerationIT",
+  "qualifiedName" : "dev.marszalek.format.docs.generator.ReportGenerationIT",
+  "packageName" : "dev.marszalek.format.docs.generator",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "RodoDocxTemplateProcessorTest",
+  "qualifiedName" : "dev.marszalek.format.docs.generator.RodoDocxTemplateProcessorTest",
+  "packageName" : "dev.marszalek.format.docs.generator",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "RodoOdtTemplateProcessorTest",
+  "qualifiedName" : "dev.marszalek.format.docs.generator.RodoOdtTemplateProcessorTest",
+  "packageName" : "dev.marszalek.format.docs.generator",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "TagAttributesQuotesTest",
+  "qualifiedName" : "dev.marszalek.format.docs.generator.TagAttributesQuotesTest",
+  "packageName" : "dev.marszalek.format.docs.generator",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "TagAttributesTest",
+  "qualifiedName" : "dev.marszalek.format.docs.generator.TagAttributesTest",
+  "packageName" : "dev.marszalek.format.docs.generator",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "MailSendingIT",
+  "qualifiedName" : "dev.marszalek.format.docs.mail.MailSendingIT",
+  "packageName" : "dev.marszalek.format.docs.mail",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "DocumentParameterTest",
+  "qualifiedName" : "dev.marszalek.format.docs.parameters.DocumentParameterTest",
+  "packageName" : "dev.marszalek.format.docs.parameters",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "ProcedureAttachmentsParameterTest",
+  "qualifiedName" : "dev.marszalek.format.docs.procedureattachments.ProcedureAttachmentsParameterTest",
+  "packageName" : "dev.marszalek.format.docs.procedureattachments",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "ProcedureWithAttachmentsDocumentIT",
+  "qualifiedName" : "dev.marszalek.format.docs.procedureattachments.ProcedureWithAttachmentsDocumentIT",
+  "packageName" : "dev.marszalek.format.docs.procedureattachments",
+  "type" : "CLASS",
+  "superClass" : "AbstractViewIT",
+  "interfaces" : [ ]
+}, {
+  "name" : "ProcedureWithAttachmentsMailIT",
+  "qualifiedName" : "dev.marszalek.format.docs.procedureattachments.ProcedureWithAttachmentsMailIT",
+  "packageName" : "dev.marszalek.format.docs.procedureattachments",
+  "type" : "CLASS",
+  "superClass" : "AbstractViewIT",
+  "interfaces" : [ ]
+}, {
+  "name" : "RecordFormatTest",
+  "qualifiedName" : "dev.marszalek.format.docs.record.RecordFormatTest",
+  "packageName" : "dev.marszalek.format.docs.record",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "RecordSerializationTest",
+  "qualifiedName" : "dev.marszalek.format.docs.record.RecordSerializationTest",
+  "packageName" : "dev.marszalek.format.docs.record",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "AuthenticatedUserTest",
+  "qualifiedName" : "dev.marszalek.format.docs.security.AuthenticatedUserTest",
+  "packageName" : "dev.marszalek.format.docs.security",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "UserDetailsServiceImplTest",
+  "qualifiedName" : "dev.marszalek.format.docs.security.UserDetailsServiceImplTest",
+  "packageName" : "dev.marszalek.format.docs.security",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "AppPropertyServiceTest",
+  "qualifiedName" : "dev.marszalek.format.docs.services.AppPropertyServiceTest",
+  "packageName" : "dev.marszalek.format.docs.services",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "PolishDateTest",
+  "qualifiedName" : "dev.marszalek.format.docs.utils.PolishDateTest",
+  "packageName" : "dev.marszalek.format.docs.utils",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "AbstractViewIT",
+  "qualifiedName" : "dev.marszalek.format.docs.views.AbstractViewIT",
+  "packageName" : "dev.marszalek.format.docs.views",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "AdminViewsIT",
+  "qualifiedName" : "dev.marszalek.format.docs.views.AdminViewsIT",
+  "packageName" : "dev.marszalek.format.docs.views",
+  "type" : "CLASS",
+  "superClass" : "AbstractViewIT",
+  "interfaces" : [ ]
+}, {
+  "name" : "AmlDocumentIT",
+  "qualifiedName" : "dev.marszalek.format.docs.views.AmlDocumentIT",
+  "packageName" : "dev.marszalek.format.docs.views",
+  "type" : "CLASS",
+  "superClass" : "AbstractViewIT",
+  "interfaces" : [ ]
+}, {
+  "name" : "AmlGoldenIT",
+  "qualifiedName" : "dev.marszalek.format.docs.views.AmlGoldenIT",
+  "packageName" : "dev.marszalek.format.docs.views",
+  "type" : "CLASS",
+  "superClass" : "AbstractViewIT",
+  "interfaces" : [ ]
+}, {
+  "name" : "AppShellIT",
+  "qualifiedName" : "dev.marszalek.format.docs.views.AppShellIT",
+  "packageName" : "dev.marszalek.format.docs.views",
+  "type" : "CLASS",
+  "superClass" : "AbstractViewIT",
+  "interfaces" : [ ]
+}, {
+  "name" : "CyberDocumentIT",
+  "qualifiedName" : "dev.marszalek.format.docs.views.CyberDocumentIT",
+  "packageName" : "dev.marszalek.format.docs.views",
+  "type" : "CLASS",
+  "superClass" : "AbstractViewIT",
+  "interfaces" : [ ]
+}, {
+  "name" : "DarkModeToggleIT",
+  "qualifiedName" : "dev.marszalek.format.docs.views.DarkModeToggleIT",
+  "packageName" : "dev.marszalek.format.docs.views",
+  "type" : "CLASS",
+  "superClass" : "AbstractViewIT",
+  "interfaces" : [ ]
+}, {
+  "name" : "DirectorReportIT",
+  "qualifiedName" : "dev.marszalek.format.docs.views.DirectorReportIT",
+  "packageName" : "dev.marszalek.format.docs.views",
+  "type" : "CLASS",
+  "superClass" : "AbstractViewIT",
+  "interfaces" : [ ]
+}, {
+  "name" : "DocumentListIT",
+  "qualifiedName" : "dev.marszalek.format.docs.views.DocumentListIT",
+  "packageName" : "dev.marszalek.format.docs.views",
+  "type" : "CLASS",
+  "superClass" : "AbstractViewIT",
+  "interfaces" : [ ]
+}, {
+  "name" : "DocumentMailIT",
+  "qualifiedName" : "dev.marszalek.format.docs.views.DocumentMailIT",
+  "packageName" : "dev.marszalek.format.docs.views",
+  "type" : "CLASS",
+  "superClass" : "AbstractViewIT",
+  "interfaces" : [ ]
+}, {
+  "name" : "DocumentRecordsIT",
+  "qualifiedName" : "dev.marszalek.format.docs.views.DocumentRecordsIT",
+  "packageName" : "dev.marszalek.format.docs.views",
+  "type" : "CLASS",
+  "superClass" : "AbstractViewIT",
+  "interfaces" : [ ]
+}, {
+  "name" : "DocxAnswerStyleIT",
+  "qualifiedName" : "dev.marszalek.format.docs.views.DocxAnswerStyleIT",
+  "packageName" : "dev.marszalek.format.docs.views",
+  "type" : "CLASS",
+  "superClass" : "AbstractViewIT",
+  "interfaces" : [ ]
+}, {
+  "name" : "DocxSectionEmissionIT",
+  "qualifiedName" : "dev.marszalek.format.docs.views.DocxSectionEmissionIT",
+  "packageName" : "dev.marszalek.format.docs.views",
+  "type" : "CLASS",
+  "superClass" : "AbstractViewIT",
+  "interfaces" : [ ]
+}, {
+  "name" : "MainLayoutInitialsTest",
+  "qualifiedName" : "dev.marszalek.format.docs.views.MainLayoutInitialsTest",
+  "packageName" : "dev.marszalek.format.docs.views",
+  "type" : "CLASS",
+  "superClass" : null,
+  "interfaces" : [ ]
+}, {
+  "name" : "OdtAnswerNumberingIT",
+  "qualifiedName" : "dev.marszalek.format.docs.views.OdtAnswerNumberingIT",
+  "packageName" : "dev.marszalek.format.docs.views",
+  "type" : "CLASS",
+  "superClass" : "AbstractViewIT",
+  "interfaces" : [ ]
+}, {
+  "name" : "QuestionsViewsIT",
+  "qualifiedName" : "dev.marszalek.format.docs.views.QuestionsViewsIT",
+  "packageName" : "dev.marszalek.format.docs.views",
+  "type" : "CLASS",
+  "superClass" : "AbstractViewIT",
+  "interfaces" : [ ]
+}, {
+  "name" : "RecordEditingIT",
+  "qualifiedName" : "dev.marszalek.format.docs.views.RecordEditingIT",
+  "packageName" : "dev.marszalek.format.docs.views",
+  "type" : "CLASS",
+  "superClass" : "AbstractViewIT",
+  "interfaces" : [ ]
+}, {
+  "name" : "RecordLifecycleIT",
+  "qualifiedName" : "dev.marszalek.format.docs.views.RecordLifecycleIT",
+  "packageName" : "dev.marszalek.format.docs.views",
+  "type" : "CLASS",
+  "superClass" : "AbstractViewIT",
+  "interfaces" : [ ]
+}, {
+  "name" : "Report2DocumentIT",
+  "qualifiedName" : "dev.marszalek.format.docs.views.Report2DocumentIT",
+  "packageName" : "dev.marszalek.format.docs.views",
+  "type" : "CLASS",
+  "superClass" : "AbstractViewIT",
+  "interfaces" : [ ]
+}, {
+  "name" : "Report2DocxDocumentIT",
+  "qualifiedName" : "dev.marszalek.format.docs.views.Report2DocxDocumentIT",
+  "packageName" : "dev.marszalek.format.docs.views",
+  "type" : "CLASS",
+  "superClass" : "AbstractViewIT",
+  "interfaces" : [ ]
+}, {
+  "name" : "ReportFormLookIT",
+  "qualifiedName" : "dev.marszalek.format.docs.views.ReportFormLookIT",
+  "packageName" : "dev.marszalek.format.docs.views",
+  "type" : "CLASS",
+  "superClass" : "AbstractViewIT",
+  "interfaces" : [ ]
+}, {
+  "name" : "ReportRecordOpeningIT",
+  "qualifiedName" : "dev.marszalek.format.docs.views.ReportRecordOpeningIT",
+  "packageName" : "dev.marszalek.format.docs.views",
+  "type" : "CLASS",
+  "superClass" : "AbstractViewIT",
+  "interfaces" : [ ]
+}, {
+  "name" : "RodoDocumentIT",
+  "qualifiedName" : "dev.marszalek.format.docs.views.RodoDocumentIT",
+  "packageName" : "dev.marszalek.format.docs.views",
+  "type" : "CLASS",
+  "superClass" : "AbstractViewIT",
+  "interfaces" : [ ]
+}, {
+  "name" : "RodoGoldenIT",
+  "qualifiedName" : "dev.marszalek.format.docs.views.RodoGoldenIT",
+  "packageName" : "dev.marszalek.format.docs.views",
+  "type" : "CLASS",
+  "superClass" : "AbstractViewIT",
+  "interfaces" : [ ]
+}, {
+  "name" : "RodoGridsIT",
+  "qualifiedName" : "dev.marszalek.format.docs.views.RodoGridsIT",
+  "packageName" : "dev.marszalek.format.docs.views",
+  "type" : "CLASS",
+  "superClass" : "AbstractViewIT",
+  "interfaces" : [ ]
+}, {
+  "name" : "RodoOdtTemplateIT",
+  "qualifiedName" : "dev.marszalek.format.docs.views.RodoOdtTemplateIT",
+  "packageName" : "dev.marszalek.format.docs.views",
+  "type" : "CLASS",
+  "superClass" : "AbstractViewIT",
+  "interfaces" : [ ]
+}, {
+  "name" : "SavePanelIT",
+  "qualifiedName" : "dev.marszalek.format.docs.views.SavePanelIT",
+  "packageName" : "dev.marszalek.format.docs.views",
+  "type" : "CLASS",
+  "superClass" : "AbstractViewIT",
+  "interfaces" : [ ]
+}, {
+  "name" : "SideNavigationIT",
+  "qualifiedName" : "dev.marszalek.format.docs.views.SideNavigationIT",
+  "packageName" : "dev.marszalek.format.docs.views",
+  "type" : "CLASS",
+  "superClass" : "AbstractViewIT",
+  "interfaces" : [ ]
+}, {
+  "name" : "SimpleProcedureDocumentIT",
+  "qualifiedName" : "dev.marszalek.format.docs.views.SimpleProcedureDocumentIT",
+  "packageName" : "dev.marszalek.format.docs.views",
+  "type" : "CLASS",
+  "superClass" : "AbstractViewIT",
+  "interfaces" : [ ]
+}, {
+  "name" : "SimpleProcedureMailIT",
+  "qualifiedName" : "dev.marszalek.format.docs.views.SimpleProcedureMailIT",
+  "packageName" : "dev.marszalek.format.docs.views",
+  "type" : "CLASS",
+  "superClass" : "AbstractViewIT",
+  "interfaces" : [ ]
+}, {
+  "name" : "VaadinInfrastructureIT",
+  "qualifiedName" : "dev.marszalek.format.docs.views.VaadinInfrastructureIT",
+  "packageName" : "dev.marszalek.format.docs.views",
+  "type" : "CLASS",
+  "superClass" : "AbstractViewIT",
+  "interfaces" : [ ]
+}, {
+  "name" : "WhistleblowerDocumentIT",
+  "qualifiedName" : "dev.marszalek.format.docs.views.WhistleblowerDocumentIT",
+  "packageName" : "dev.marszalek.format.docs.views",
+  "type" : "CLASS",
+  "superClass" : "AbstractViewIT",
+  "interfaces" : [ ]
+} ]

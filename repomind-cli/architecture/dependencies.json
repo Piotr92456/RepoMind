@@ -1,0 +1,649 @@
+[ {
+  "source" : "AmlData",
+  "target" : "DocumentData",
+  "type" : "EXTENDS"
+}, {
+  "source" : "NounEnum",
+  "target" : "DescriptionEnum",
+  "type" : "EXTENDS"
+}, {
+  "source" : "ClipboardHelper",
+  "target" : "LitTemplate",
+  "type" : "EXTENDS"
+}, {
+  "source" : "BinderCrudForm",
+  "target" : "Composite",
+  "type" : "EXTENDS"
+}, {
+  "source" : "BinderCrudForm",
+  "target" : "CrudForm",
+  "type" : "IMPLEMENTS"
+}, {
+  "source" : "BinderCrudFormFactory",
+  "target" : "CrudFormFactory",
+  "type" : "IMPLEMENTS"
+}, {
+  "source" : "DocumentSection",
+  "target" : "VerticalLayout",
+  "type" : "EXTENDS"
+}, {
+  "source" : "FormatDocsDownloader",
+  "target" : "Anchor",
+  "type" : "EXTENDS"
+}, {
+  "source" : "FormatDocsDownloader",
+  "target" : "FluentComponent",
+  "type" : "IMPLEMENTS"
+}, {
+  "source" : "FormatDocsDownloader",
+  "target" : "FluentHasEnabled",
+  "type" : "IMPLEMENTS"
+}, {
+  "source" : "FormatDocsDownloader",
+  "target" : "FluentHasTooltip",
+  "type" : "IMPLEMENTS"
+}, {
+  "source" : "PolishDatePicker",
+  "target" : "DatePicker",
+  "type" : "EXTENDS"
+}, {
+  "source" : "QuestionComponent",
+  "target" : "VerticalLayout",
+  "type" : "EXTENDS"
+}, {
+  "source" : "ApplicationServiceInitListener",
+  "target" : "VaadinServiceInitListener",
+  "type" : "IMPLEMENTS"
+}, {
+  "source" : "FormatDocsErrorHandler",
+  "target" : "ErrorHandler",
+  "type" : "IMPLEMENTS"
+}, {
+  "source" : "CyberData",
+  "target" : "DocumentData",
+  "type" : "EXTENDS"
+}, {
+  "source" : "DocumentDto",
+  "target" : "Serializable",
+  "type" : "IMPLEMENTS"
+}, {
+  "source" : "DocumentRecordDto",
+  "target" : "Serializable",
+  "type" : "IMPLEMENTS"
+}, {
+  "source" : "OfficeDto",
+  "target" : "Serializable",
+  "type" : "IMPLEMENTS"
+}, {
+  "source" : "Answer",
+  "target" : "Persistable",
+  "type" : "IMPLEMENTS"
+}, {
+  "source" : "AnswerParameterGet",
+  "target" : "Persistable",
+  "type" : "IMPLEMENTS"
+}, {
+  "source" : "AnswerParameterSet",
+  "target" : "Persistable",
+  "type" : "IMPLEMENTS"
+}, {
+  "source" : "Question",
+  "target" : "Persistable",
+  "type" : "IMPLEMENTS"
+}, {
+  "source" : "Recommendation",
+  "target" : "Persistable",
+  "type" : "IMPLEMENTS"
+}, {
+  "source" : "Section",
+  "target" : "Persistable",
+  "type" : "IMPLEMENTS"
+}, {
+  "source" : "StaticText",
+  "target" : "Persistable",
+  "type" : "IMPLEMENTS"
+}, {
+  "source" : "AnswerParameterGetRepository",
+  "target" : "JpaRepository",
+  "type" : "EXTENDS"
+}, {
+  "source" : "AnswerParameterGetRepository",
+  "target" : "JpaSpecificationExecutor",
+  "type" : "EXTENDS"
+}, {
+  "source" : "AnswerParameterSetRepository",
+  "target" : "JpaRepository",
+  "type" : "EXTENDS"
+}, {
+  "source" : "AnswerParameterSetRepository",
+  "target" : "JpaSpecificationExecutor",
+  "type" : "EXTENDS"
+}, {
+  "source" : "AnswerRepository",
+  "target" : "JpaRepository",
+  "type" : "EXTENDS"
+}, {
+  "source" : "AnswerRepository",
+  "target" : "JpaSpecificationExecutor",
+  "type" : "EXTENDS"
+}, {
+  "source" : "AppPropertyRepository",
+  "target" : "JpaRepository",
+  "type" : "EXTENDS"
+}, {
+  "source" : "AppPropertyRepository",
+  "target" : "JpaSpecificationExecutor",
+  "type" : "EXTENDS"
+}, {
+  "source" : "DocumentRecordRepository",
+  "target" : "JpaRepository",
+  "type" : "EXTENDS"
+}, {
+  "source" : "DocumentRecordRepository",
+  "target" : "JpaSpecificationExecutor",
+  "type" : "EXTENDS"
+}, {
+  "source" : "DocumentRepository",
+  "target" : "JpaRepository",
+  "type" : "EXTENDS"
+}, {
+  "source" : "DocumentRepository",
+  "target" : "JpaSpecificationExecutor",
+  "type" : "EXTENDS"
+}, {
+  "source" : "MailTemplateRepository",
+  "target" : "JpaRepository",
+  "type" : "EXTENDS"
+}, {
+  "source" : "MailTemplateRepository",
+  "target" : "JpaSpecificationExecutor",
+  "type" : "EXTENDS"
+}, {
+  "source" : "OfficeRepository",
+  "target" : "JpaRepository",
+  "type" : "EXTENDS"
+}, {
+  "source" : "OfficeRepository",
+  "target" : "JpaSpecificationExecutor",
+  "type" : "EXTENDS"
+}, {
+  "source" : "ParameterRepository",
+  "target" : "JpaRepository",
+  "type" : "EXTENDS"
+}, {
+  "source" : "ParameterRepository",
+  "target" : "JpaSpecificationExecutor",
+  "type" : "EXTENDS"
+}, {
+  "source" : "QuestionRepository",
+  "target" : "JpaRepository",
+  "type" : "EXTENDS"
+}, {
+  "source" : "QuestionRepository",
+  "target" : "JpaSpecificationExecutor",
+  "type" : "EXTENDS"
+}, {
+  "source" : "RecommendationRepository",
+  "target" : "JpaRepository",
+  "type" : "EXTENDS"
+}, {
+  "source" : "RecommendationRepository",
+  "target" : "JpaSpecificationExecutor",
+  "type" : "EXTENDS"
+}, {
+  "source" : "RodoDictDatasetRepository",
+  "target" : "JpaRepository",
+  "type" : "EXTENDS"
+}, {
+  "source" : "RodoDictDatasetRepository",
+  "target" : "JpaSpecificationExecutor",
+  "type" : "EXTENDS"
+}, {
+  "source" : "RodoDictMeasureRepository",
+  "target" : "JpaRepository",
+  "type" : "EXTENDS"
+}, {
+  "source" : "RodoDictMeasureRepository",
+  "target" : "JpaSpecificationExecutor",
+  "type" : "EXTENDS"
+}, {
+  "source" : "RodoDictMonitoringRepository",
+  "target" : "JpaRepository",
+  "type" : "EXTENDS"
+}, {
+  "source" : "RodoDictMonitoringRepository",
+  "target" : "JpaSpecificationExecutor",
+  "type" : "EXTENDS"
+}, {
+  "source" : "RodoDictRiskRepository",
+  "target" : "JpaRepository",
+  "type" : "EXTENDS"
+}, {
+  "source" : "RodoDictRiskRepository",
+  "target" : "JpaSpecificationExecutor",
+  "type" : "EXTENDS"
+}, {
+  "source" : "RodoDictScopeRepository",
+  "target" : "JpaRepository",
+  "type" : "EXTENDS"
+}, {
+  "source" : "RodoDictScopeRepository",
+  "target" : "JpaSpecificationExecutor",
+  "type" : "EXTENDS"
+}, {
+  "source" : "RoleRepository",
+  "target" : "JpaRepository",
+  "type" : "EXTENDS"
+}, {
+  "source" : "RoleRepository",
+  "target" : "JpaSpecificationExecutor",
+  "type" : "EXTENDS"
+}, {
+  "source" : "SectionRepository",
+  "target" : "JpaRepository",
+  "type" : "EXTENDS"
+}, {
+  "source" : "SectionRepository",
+  "target" : "JpaSpecificationExecutor",
+  "type" : "EXTENDS"
+}, {
+  "source" : "StaticTextRepository",
+  "target" : "JpaRepository",
+  "type" : "EXTENDS"
+}, {
+  "source" : "StaticTextRepository",
+  "target" : "JpaSpecificationExecutor",
+  "type" : "EXTENDS"
+}, {
+  "source" : "UserRepository",
+  "target" : "JpaRepository",
+  "type" : "EXTENDS"
+}, {
+  "source" : "UserRepository",
+  "target" : "JpaSpecificationExecutor",
+  "type" : "EXTENDS"
+}, {
+  "source" : "UserSettingsRepository",
+  "target" : "JpaRepository",
+  "type" : "EXTENDS"
+}, {
+  "source" : "UserSettingsRepository",
+  "target" : "JpaSpecificationExecutor",
+  "type" : "EXTENDS"
+}, {
+  "source" : "AnswerItem",
+  "target" : "Serializable",
+  "type" : "IMPLEMENTS"
+}, {
+  "source" : "DocumentSettings",
+  "target" : "Serializable",
+  "type" : "IMPLEMENTS"
+}, {
+  "source" : "RecordData",
+  "target" : "Serializable",
+  "type" : "IMPLEMENTS"
+}, {
+  "source" : "StopDownloadException",
+  "target" : "RuntimeException",
+  "type" : "EXTENDS"
+}, {
+  "source" : "DocxDocumentProcessor2",
+  "target" : "DocumentProcessor2",
+  "type" : "EXTENDS"
+}, {
+  "source" : "OdtDocumentProcessor2",
+  "target" : "DocumentProcessor2",
+  "type" : "EXTENDS"
+}, {
+  "source" : "InteractiveDocumentsApplication",
+  "target" : "AppShellConfigurator",
+  "type" : "IMPLEMENTS"
+}, {
+  "source" : "RodoData",
+  "target" : "DocumentData",
+  "type" : "EXTENDS"
+}, {
+  "source" : "RodoMeasure",
+  "target" : "RodoSimpleDict",
+  "type" : "IMPLEMENTS"
+}, {
+  "source" : "RodoMonitoring",
+  "target" : "RodoSimpleDict",
+  "type" : "IMPLEMENTS"
+}, {
+  "source" : "UserDetailsServiceImpl",
+  "target" : "UserDetailsService",
+  "type" : "IMPLEMENTS"
+}, {
+  "source" : "CrudOperationException",
+  "target" : "RuntimeException",
+  "type" : "EXTENDS"
+}, {
+  "source" : "UserHasDocumentRecordsException",
+  "target" : "RuntimeException",
+  "type" : "EXTENDS"
+}, {
+  "source" : "SimpleProcedureData",
+  "target" : "DocumentData",
+  "type" : "EXTENDS"
+}, {
+  "source" : "PathReference",
+  "target" : "AutoCloseable",
+  "type" : "IMPLEMENTS"
+}, {
+  "source" : "AboutView",
+  "target" : "VerticalLayout",
+  "type" : "EXTENDS"
+}, {
+  "source" : "MailTemplatesView",
+  "target" : "Div",
+  "type" : "EXTENDS"
+}, {
+  "source" : "OfficeListView",
+  "target" : "Div",
+  "type" : "EXTENDS"
+}, {
+  "source" : "PropertiesView",
+  "target" : "Div",
+  "type" : "EXTENDS"
+}, {
+  "source" : "UserListView",
+  "target" : "Div",
+  "type" : "EXTENDS"
+}, {
+  "source" : "WaitDialog",
+  "target" : "Dialog",
+  "type" : "EXTENDS"
+}, {
+  "source" : "DirectorReportView",
+  "target" : "Composite",
+  "type" : "EXTENDS"
+}, {
+  "source" : "AbstractCyberDocumentView",
+  "target" : "AbstractTemplateDocumentView",
+  "type" : "EXTENDS"
+}, {
+  "source" : "AbstractDocumentView",
+  "target" : "Composite",
+  "type" : "EXTENDS"
+}, {
+  "source" : "AbstractDocumentView",
+  "target" : "BeforeEnterObserver",
+  "type" : "IMPLEMENTS"
+}, {
+  "source" : "AbstractDocumentView",
+  "target" : "HasDynamicTitle",
+  "type" : "IMPLEMENTS"
+}, {
+  "source" : "AbstractReportDocumentView",
+  "target" : "AbstractDocumentView",
+  "type" : "EXTENDS"
+}, {
+  "source" : "AbstractSimpleDocumentView",
+  "target" : "AbstractTemplateDocumentView",
+  "type" : "EXTENDS"
+}, {
+  "source" : "AbstractTemplateDocumentView",
+  "target" : "AbstractDocumentView",
+  "type" : "EXTENDS"
+}, {
+  "source" : "AmlDocumentView",
+  "target" : "AbstractSimpleDocumentView",
+  "type" : "EXTENDS"
+}, {
+  "source" : "CyberPrivDocumentView",
+  "target" : "AbstractCyberDocumentView",
+  "type" : "EXTENDS"
+}, {
+  "source" : "CyberPublicDocumentView",
+  "target" : "AbstractCyberDocumentView",
+  "type" : "EXTENDS"
+}, {
+  "source" : "ProcedureWithAttachmentsDocumentView",
+  "target" : "AbstractTemplateDocumentView",
+  "type" : "EXTENDS"
+}, {
+  "source" : "Report2DocumentView",
+  "target" : "AbstractReportDocumentView",
+  "type" : "EXTENDS"
+}, {
+  "source" : "RodoDocumentView",
+  "target" : "AbstractTemplateDocumentView",
+  "type" : "EXTENDS"
+}, {
+  "source" : "RodoQuestionsView",
+  "target" : "Composite",
+  "type" : "EXTENDS"
+}, {
+  "source" : "RodoQuestionsView",
+  "target" : "BeforeEnterObserver",
+  "type" : "IMPLEMENTS"
+}, {
+  "source" : "RodoQuestionsView",
+  "target" : "HasDynamicTitle",
+  "type" : "IMPLEMENTS"
+}, {
+  "source" : "SimpleProcedureDocumentView",
+  "target" : "AbstractSimpleDocumentView",
+  "type" : "EXTENDS"
+}, {
+  "source" : "WhistleblowerDocumentView",
+  "target" : "AbstractSimpleDocumentView",
+  "type" : "EXTENDS"
+}, {
+  "source" : "DocumentListView",
+  "target" : "Div",
+  "type" : "EXTENDS"
+}, {
+  "source" : "DocumentListView",
+  "target" : "BeforeEnterObserver",
+  "type" : "IMPLEMENTS"
+}, {
+  "source" : "DocumentRecordsFiltersView",
+  "target" : "Div",
+  "type" : "EXTENDS"
+}, {
+  "source" : "DocumentRecordsFiltersView",
+  "target" : "Specification",
+  "type" : "IMPLEMENTS"
+}, {
+  "source" : "DocumentRecordsView",
+  "target" : "Composite",
+  "type" : "EXTENDS"
+}, {
+  "source" : "DocumentRecordsView",
+  "target" : "BeforeEnterObserver",
+  "type" : "IMPLEMENTS"
+}, {
+  "source" : "DocumentRecordsView",
+  "target" : "HasDynamicTitle",
+  "type" : "IMPLEMENTS"
+}, {
+  "source" : "DocsChangePasswordDialog",
+  "target" : "ChangePasswordDialog",
+  "type" : "EXTENDS"
+}, {
+  "source" : "DocsNewPasswordDialog",
+  "target" : "ChangePasswordDialog",
+  "type" : "EXTENDS"
+}, {
+  "source" : "LoginView",
+  "target" : "LoginOverlay",
+  "type" : "EXTENDS"
+}, {
+  "source" : "LoginView",
+  "target" : "BeforeEnterObserver",
+  "type" : "IMPLEMENTS"
+}, {
+  "source" : "MainLayout",
+  "target" : "AppLayout",
+  "type" : "EXTENDS"
+}, {
+  "source" : "MainLayout",
+  "target" : "AfterNavigationObserver",
+  "type" : "IMPLEMENTS"
+}, {
+  "source" : "AmlQuestionsView",
+  "target" : "Composite",
+  "type" : "EXTENDS"
+}, {
+  "source" : "AmlQuestionsView",
+  "target" : "BeforeEnterObserver",
+  "type" : "IMPLEMENTS"
+}, {
+  "source" : "AmlQuestionsView",
+  "target" : "HasDynamicTitle",
+  "type" : "IMPLEMENTS"
+}, {
+  "source" : "RodoDictDatasetListView",
+  "target" : "Div",
+  "type" : "EXTENDS"
+}, {
+  "source" : "RodoDictMeasureListView",
+  "target" : "Div",
+  "type" : "EXTENDS"
+}, {
+  "source" : "RodoDictRiskListView",
+  "target" : "Div",
+  "type" : "EXTENDS"
+}, {
+  "source" : "ValidationMessage",
+  "target" : "HorizontalLayout",
+  "type" : "EXTENDS"
+}, {
+  "source" : "ValidationMessage",
+  "target" : "HasText",
+  "type" : "IMPLEMENTS"
+}, {
+  "source" : "WhistleblowerData",
+  "target" : "DocumentData",
+  "type" : "EXTENDS"
+}, {
+  "source" : "ProcedureWithAttachmentsDocumentIT",
+  "target" : "AbstractViewIT",
+  "type" : "EXTENDS"
+}, {
+  "source" : "ProcedureWithAttachmentsMailIT",
+  "target" : "AbstractViewIT",
+  "type" : "EXTENDS"
+}, {
+  "source" : "AdminViewsIT",
+  "target" : "AbstractViewIT",
+  "type" : "EXTENDS"
+}, {
+  "source" : "AmlDocumentIT",
+  "target" : "AbstractViewIT",
+  "type" : "EXTENDS"
+}, {
+  "source" : "AmlGoldenIT",
+  "target" : "AbstractViewIT",
+  "type" : "EXTENDS"
+}, {
+  "source" : "AppShellIT",
+  "target" : "AbstractViewIT",
+  "type" : "EXTENDS"
+}, {
+  "source" : "CyberDocumentIT",
+  "target" : "AbstractViewIT",
+  "type" : "EXTENDS"
+}, {
+  "source" : "DarkModeToggleIT",
+  "target" : "AbstractViewIT",
+  "type" : "EXTENDS"
+}, {
+  "source" : "DirectorReportIT",
+  "target" : "AbstractViewIT",
+  "type" : "EXTENDS"
+}, {
+  "source" : "DocumentListIT",
+  "target" : "AbstractViewIT",
+  "type" : "EXTENDS"
+}, {
+  "source" : "DocumentMailIT",
+  "target" : "AbstractViewIT",
+  "type" : "EXTENDS"
+}, {
+  "source" : "DocumentRecordsIT",
+  "target" : "AbstractViewIT",
+  "type" : "EXTENDS"
+}, {
+  "source" : "DocxAnswerStyleIT",
+  "target" : "AbstractViewIT",
+  "type" : "EXTENDS"
+}, {
+  "source" : "DocxSectionEmissionIT",
+  "target" : "AbstractViewIT",
+  "type" : "EXTENDS"
+}, {
+  "source" : "OdtAnswerNumberingIT",
+  "target" : "AbstractViewIT",
+  "type" : "EXTENDS"
+}, {
+  "source" : "QuestionsViewsIT",
+  "target" : "AbstractViewIT",
+  "type" : "EXTENDS"
+}, {
+  "source" : "RecordEditingIT",
+  "target" : "AbstractViewIT",
+  "type" : "EXTENDS"
+}, {
+  "source" : "RecordLifecycleIT",
+  "target" : "AbstractViewIT",
+  "type" : "EXTENDS"
+}, {
+  "source" : "Report2DocumentIT",
+  "target" : "AbstractViewIT",
+  "type" : "EXTENDS"
+}, {
+  "source" : "Report2DocxDocumentIT",
+  "target" : "AbstractViewIT",
+  "type" : "EXTENDS"
+}, {
+  "source" : "ReportFormLookIT",
+  "target" : "AbstractViewIT",
+  "type" : "EXTENDS"
+}, {
+  "source" : "ReportRecordOpeningIT",
+  "target" : "AbstractViewIT",
+  "type" : "EXTENDS"
+}, {
+  "source" : "RodoDocumentIT",
+  "target" : "AbstractViewIT",
+  "type" : "EXTENDS"
+}, {
+  "source" : "RodoGoldenIT",
+  "target" : "AbstractViewIT",
+  "type" : "EXTENDS"
+}, {
+  "source" : "RodoGridsIT",
+  "target" : "AbstractViewIT",
+  "type" : "EXTENDS"
+}, {
+  "source" : "RodoOdtTemplateIT",
+  "target" : "AbstractViewIT",
+  "type" : "EXTENDS"
+}, {
+  "source" : "SavePanelIT",
+  "target" : "AbstractViewIT",
+  "type" : "EXTENDS"
+}, {
+  "source" : "SideNavigationIT",
+  "target" : "AbstractViewIT",
+  "type" : "EXTENDS"
+}, {
+  "source" : "SimpleProcedureDocumentIT",
+  "target" : "AbstractViewIT",
+  "type" : "EXTENDS"
+}, {
+  "source" : "SimpleProcedureMailIT",
+  "target" : "AbstractViewIT",
+  "type" : "EXTENDS"
+}, {
+  "source" : "VaadinInfrastructureIT",
+  "target" : "AbstractViewIT",
+  "type" : "EXTENDS"
+}, {
+  "source" : "WhistleblowerDocumentIT",
+  "target" : "AbstractViewIT",
+  "type" : "EXTENDS"
+} ]
