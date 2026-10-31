@@ -5,12 +5,13 @@ import pl.piotr.repomind.core.parser.ParserConfigurationFactory;
 import pl.piotr.repomind.core.scanner.ProjectScanner;
 import pl.piotr.repomind.generators.json.ClassesJsonGenerator;
 import pl.piotr.repomind.generators.json.DependenciesJsonGenerator;
+import pl.piotr.repomind.generators.plantuml.PlantUmlGenerator;
 
 import java.nio.file.Path;
 
 public class Main {
 
-    public static void main(String[] args)
+    static void main(String[] args)
             throws Exception {
 
         ParserConfigurationFactory.configure();
@@ -58,14 +59,28 @@ public class Main {
                         architectureDir
                 );
 
-        System.out.println(
-                "Classes: "
-                        + model.getClasses().size()
-        );
+
+        new PlantUmlGenerator()
+                .generate(
+                        model,
+                        architectureDir.resolve(
+                                "class-diagrams"
+                        )
+                );
 
         System.out.println(
-                "Dependencies: "
-                        + model.getDependencies().size()
+                "PlantUML generated"
         );
+
+
+//        System.out.println(
+//                "Classes: "
+//                        + model.getClasses().size()
+//        );
+//
+//        System.out.println(
+//                "Dependencies: "
+//                        + model.getDependencies().size()
+//        );
     }
 }
