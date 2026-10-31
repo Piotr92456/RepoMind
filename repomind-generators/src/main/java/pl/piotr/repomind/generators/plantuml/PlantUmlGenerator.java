@@ -1,5 +1,6 @@
 package pl.piotr.repomind.generators.plantuml;
 
+import pl.piotr.repomind.core.model.ClassInfo;
 import pl.piotr.repomind.core.model.DependencyInfo;
 import pl.piotr.repomind.core.model.ProjectModel;
 
@@ -8,6 +9,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 public class PlantUmlGenerator {
 
@@ -41,8 +43,32 @@ public class PlantUmlGenerator {
         DiagramClassifier classifier =
                 new DiagramClassifier();
 
+        Set<String> projectClasses =
+                model.getClasses()
+                        .stream()
+                        .map(ClassInfo::name)
+                        .collect(Collectors.toSet());
+
+
+        System.out.println(
+                "Project classes: "
+                        + projectClasses.size()
+        );
+
         for (DependencyInfo dependency
                 : model.getDependencies()) {
+
+            if (!projectClasses.contains(
+                    dependency.source()
+            )) {
+                continue;
+            }
+
+            if (!projectClasses.contains(
+                    dependency.target()
+            )) {
+                continue;
+            }
 
             DiagramCategory category =
                     classifier.classify(

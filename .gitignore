@@ -32,9 +32,11 @@ target/
 # Generated architecture artifacts
 # =====================================================
 
-architecture/*.json
-architecture/**/*.json
-architecture/**/*.puml
+**/architecture/*.json
+**/architecture/**/*.json
+
+**/architecture/*.puml
+**/architecture/**/*.puml
 
 # =====================================================
 # Archives
