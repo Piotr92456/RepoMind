@@ -37,13 +37,14 @@ public class DependencyAnalyzer {
 
         declaration.getExtendedTypes()
                 .forEach(type -> {
+
                     System.out.println(
                             "[EXTENDS] "
                                     + source
                                     + " -> "
                                     + type.getNameAsString()
-
                     );
+
                     dependencies.add(
                             new DependencyInfo(
                                     source,
@@ -62,6 +63,7 @@ public class DependencyAnalyzer {
                                     + " -> "
                                     + type.getNameAsString()
                     );
+
                     dependencies.add(
                             new DependencyInfo(
                                     source,
@@ -71,6 +73,105 @@ public class DependencyAnalyzer {
                     );
                 });
 
+        analyzeFields(
+                declaration,
+                dependencies
+        );
+
+        analyzeConstructors(
+                declaration,
+                dependencies
+        );
+
         return dependencies;
+    }
+
+    /**
+     * Analiza pól klasy.
+     */
+    private void analyzeFields(
+            ClassOrInterfaceDeclaration declaration,
+            List<DependencyInfo> dependencies
+    ) {
+
+        String source =
+                declaration.getNameAsString();
+
+        declaration.getFields()
+                .forEach(field ->
+
+                        field.getVariables()
+                                .forEach(variable -> {
+
+                                    String target =
+                                            variable.getTypeAsString();
+
+                                    if (TypeFilter.shouldIgnore(target)) {
+                                        return;
+                                    }
+
+                                    dependencies.add(
+                                            new DependencyInfo(
+                                                    source,
+                                                    target,
+                                                    DependencyType.FIELD
+                                            )
+                                    );
+                                })
+                );
+
+        declaration.getImplementedTypes()
+                .forEach(type -> {
+
+                    System.out.println(
+                            "[IMPLEMENTS] "
+                                    + source
+                                    + " -> "
+                                    + type.getNameAsString()
+                    );
+
+                    dependencies.add(
+                            new DependencyInfo(
+                                    source,
+                                    type.getNameAsString(),
+                                    DependencyType.IMPLEMENTS
+                            )
+                    );
+                });
+    }
+
+    /**
+     * Analiza wstrzykiwania przez konstruktor.
+     */
+    private void analyzeConstructors(
+            ClassOrInterfaceDeclaration declaration,
+            List<DependencyInfo> dependencies
+    ) {
+
+        String source =
+                declaration.getNameAsString();
+
+        declaration.getConstructors()
+                .forEach(constructor ->
+
+                        constructor.getParameters()
+                                .forEach(parameter -> {
+
+                                    String target =
+                                            parameter.getTypeAsString();
+
+                                    if (TypeFilter.shouldIgnore(target)) {
+                                        return;
+                                    }
+
+                                    dependencies.add(
+                                            new DependencyInfo(
+                                                    source,
+                                                    target,
+                                                    DependencyType.CONSTRUCTOR_INJECTION
+                                            )
+                                    );
+                                })
+                );
     }
 }
