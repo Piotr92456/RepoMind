@@ -1,0 +1,51 @@
+# IntelliJ
+.idea/
+**/.idea/
+*.iml
+
+# Gradle
+.gradle/
+**/.gradle/
+
+build/
+**/build/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+out/
+target/
+
+# Generated outputs
+architecture/
+**/architecture/
+
+# Archives
+*.zip
+*.tar
+*.gz
+
+# Build cache
+*.uniqueId*
+previous-compilation-data.bin
+
+# Logs
+*.log
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# IntelliJ generated
+/shelf/
+/workspace.xml
+/httpRequests/
+/queries/
+/dataSources/
+/dataSources.local.xml
