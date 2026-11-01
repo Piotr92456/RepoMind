@@ -1,11 +1,14 @@
 package pl.piotr.repomind.core.analyzer;
 
 import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
+import com.github.javaparser.ast.expr.MethodCallExpr;
 import pl.piotr.repomind.core.model.DependencyInfo;
 import pl.piotr.repomind.core.model.DependencyType;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Odpowiada za wykrywanie relacji
@@ -84,6 +87,11 @@ public class DependencyAnalyzer {
                 dependencies
         );
 
+        analyzeMethodCalls(
+                declaration,
+                dependencies
+        );
+
         return dependencies;
     }
 
@@ -155,5 +163,106 @@ public class DependencyAnalyzer {
                                     );
                                 })
                 );
+    }
+
+    /**
+     * Analiza wywołań metod.
+     */
+    /**
+     * Analiza wywołań metod.
+     */
+    /**
+     * Analiza wywołań metod.
+     */
+    private void analyzeMethodCalls(
+            ClassOrInterfaceDeclaration declaration,
+            List<DependencyInfo> dependencies
+    ) {
+
+        Map<String, String> fieldMap =
+                buildFieldMap(
+                        declaration
+                );
+
+        String source =
+                declaration.getNameAsString();
+
+        System.out.println(
+                "[METHOD_SCAN] "
+                        + source
+        );
+
+        declaration.findAll(
+                MethodCallExpr.class
+        ).forEach(call -> {
+
+            System.out.println(
+                    "[METHOD_CALL] "
+                            + source
+                            + " -> "
+                            + call
+            );
+
+            System.out.println(
+                    "[METHOD_NAME] "
+                            + call.getNameAsString()
+            );
+
+            call.getScope()
+                    .ifPresent(scope -> {
+
+                        System.out.println(
+                                "[METHOD_SCOPE] "
+                                        + scope
+                        );
+
+                        String dependency =
+                                fieldMap.get(
+                                        scope.toString()
+                                );
+
+                        if (dependency != null) {
+                            return;
+                        }
+
+                        if (TypeFilter.shouldIgnore(
+                                dependency
+                        )) {
+                            return;
+                        }
+
+                            dependencies.add(
+                                    new DependencyInfo(
+                                            source,
+                                            dependency,
+                                            DependencyType.METHOD_CALL
+                                    )
+                            );
+
+                    });
+        });
+    }
+
+    private Map<String, String> buildFieldMap(
+            ClassOrInterfaceDeclaration declaration
+    ) {
+
+        Map<String, String> fieldMap =
+                new HashMap<>();
+
+        declaration.getFields()
+                .forEach(field ->
+
+                        field.getVariables()
+                                .forEach(variable ->
+
+                                        fieldMap.put(
+                                                variable.getNameAsString(),
+                                                variable.getTypeAsString()
+                                        )
+                                )
+                );
+
+        return fieldMap;
     }
 }

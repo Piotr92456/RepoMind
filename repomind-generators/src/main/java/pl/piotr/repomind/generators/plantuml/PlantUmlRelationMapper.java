@@ -27,6 +27,9 @@ public final class PlantUmlRelationMapper {
                  CONSTRUCTOR_INJECTION ->
                     "-->";
 
+            case METHOD_CALL ->
+                    "..>";
+
             default ->
                     "-->";
         };
