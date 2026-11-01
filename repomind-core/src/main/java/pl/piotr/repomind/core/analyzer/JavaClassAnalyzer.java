@@ -8,11 +8,10 @@ import com.github.javaparser.ast.body.TypeDeclaration;
 import pl.piotr.repomind.core.model.AnalysisResult;
 import pl.piotr.repomind.core.model.ClassInfo;
 import pl.piotr.repomind.core.model.ClassType;
+import pl.piotr.repomind.core.model.SpringComponentType;
 
 import java.io.IOException;
 import java.nio.file.Path;
-import java.util.ArrayList;
-import java.util.List;
 
 public class JavaClassAnalyzer {
 
@@ -27,6 +26,9 @@ public class JavaClassAnalyzer {
         DependencyAnalyzer dependencyAnalyzer =
                 new DependencyAnalyzer();
 
+        SpringAnnotationAnalyzer annotationAnalyzer =
+                new SpringAnnotationAnalyzer();
+
         CompilationUnit cu =
                 StaticJavaParser.parse(file);
 
@@ -37,9 +39,6 @@ public class JavaClassAnalyzer {
                         .map(p -> p.getNameAsString())
                         .orElse("");
 
-        List<ClassInfo> classes =
-                new ArrayList<>();
-
         for (TypeDeclaration<?> type : cu.getTypes()) {
 
             if (type instanceof ClassOrInterfaceDeclaration c) {
@@ -48,6 +47,15 @@ public class JavaClassAnalyzer {
                         c.isInterface()
                                 ? ClassType.INTERFACE
                                 : ClassType.CLASS;
+
+                SpringComponentType componentType =
+                        annotationAnalyzer.analyze(c);
+
+                System.out.println(
+                        c.getNameAsString()
+                                + " -> "
+                                + componentType
+                );
 
                 result.getClasses().add(
                         new ClassInfo(
@@ -63,7 +71,8 @@ public class JavaClassAnalyzer {
                                 c.getImplementedTypes()
                                         .stream()
                                         .map(i -> i.getNameAsString())
-                                        .toList()
+                                        .toList(),
+                                componentType
                         )
                 );
 

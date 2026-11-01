@@ -8,6 +8,7 @@ public record ClassInfo(
         String packageName,
         ClassType type,
         String superClass,
-        List<String> interfaces
+        List<String> interfaces,
+        SpringComponentType componentType
 ) {
 }

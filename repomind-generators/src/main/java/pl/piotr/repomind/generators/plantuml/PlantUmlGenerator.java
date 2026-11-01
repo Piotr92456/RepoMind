@@ -8,7 +8,9 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class PlantUmlGenerator {
@@ -49,6 +51,15 @@ public class PlantUmlGenerator {
                         .map(ClassInfo::name)
                         .collect(Collectors.toSet());
 
+        Map<String, ClassInfo> classesByName =
+                model.getClasses()
+                        .stream()
+                        .collect(
+                                Collectors.toMap(
+                                        ClassInfo::name,
+                                        Function.identity()
+                                )
+                        );
 
         System.out.println(
                 "Project classes: "
@@ -70,9 +81,14 @@ public class PlantUmlGenerator {
                 continue;
             }
 
-            DiagramCategory category =
-                    classifier.classify(
+            ClassInfo sourceClass =
+                    classesByName.get(
                             dependency.source()
+                    );
+
+            ClassInfo targetClass =
+                    classesByName.get(
+                            dependency.target()
                     );
 
             String relation =
@@ -84,41 +100,73 @@ public class PlantUmlGenerator {
                             + " "
                             + dependency.source();
 
-            addToCategory(
-                    category,
-                    relation,
-                    services,
-                    repositories,
-                    views,
-                    entities,
-                    controllers
-            );
+            if (sourceClass != null) {
+
+                DiagramCategory sourceCategory =
+                        classifier.classify(
+                                sourceClass
+                        );
+
+                addToCategory(
+                        sourceCategory,
+                        relation,
+                        services,
+                        repositories,
+                        views,
+                        entities,
+                        controllers
+                );
+            }
+
+            if (targetClass != null) {
+
+                DiagramCategory targetCategory =
+                        classifier.classify(
+                                targetClass
+                        );
+
+                addToCategory(
+                        targetCategory,
+                        relation,
+                        services,
+                        repositories,
+                        views,
+                        entities,
+                        controllers
+                );
+            }
 
             all.add(relation);
         }
 
         System.out.println(
-                "Services: " + services.size()
+                "Service relations: "
+                        + services.size()
         );
 
         System.out.println(
-                "Repositories: " + repositories.size()
+                "Repository relations: "
+                        + repositories.size()
         );
 
         System.out.println(
-                "Views: " + views.size()
+                "View relations: "
+                        + views.size()
         );
 
         System.out.println(
-                "Entities: " + entities.size()
+                "Entity relations: "
+                        + entities.size()
         );
 
         System.out.println(
-                "Controllers: " + controllers.size()
+                "Controller relations: "
+                        + controllers.size()
         );
 
         System.out.println(
-                "Total relations: " + all.size()
+                "Total relations: "
+                        + all.size()
         );
 
         writeDiagram(

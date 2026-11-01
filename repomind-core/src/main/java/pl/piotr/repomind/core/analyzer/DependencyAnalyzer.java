@@ -1,7 +1,6 @@
 package pl.piotr.repomind.core.analyzer;
 
 import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
-
 import pl.piotr.repomind.core.model.DependencyInfo;
 import pl.piotr.repomind.core.model.DependencyType;
 
@@ -15,6 +14,8 @@ import java.util.List;
  * RepoMind 0.2.0:
  * - extends
  * - implements
+ * - field injection
+ * - constructor injection
  */
 public class DependencyAnalyzer {
 
@@ -119,25 +120,6 @@ public class DependencyAnalyzer {
                                     );
                                 })
                 );
-
-        declaration.getImplementedTypes()
-                .forEach(type -> {
-
-                    System.out.println(
-                            "[IMPLEMENTS] "
-                                    + source
-                                    + " -> "
-                                    + type.getNameAsString()
-                    );
-
-                    dependencies.add(
-                            new DependencyInfo(
-                                    source,
-                                    type.getNameAsString(),
-                                    DependencyType.IMPLEMENTS
-                            )
-                    );
-                });
     }
 
     /**

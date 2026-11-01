@@ -1,37 +1,36 @@
 package pl.piotr.repomind.generators.plantuml;
 
-/**
- * Klasyfikuje klasy do diagramów.
- */
+import pl.piotr.repomind.core.model.ClassInfo;
+
 public class DiagramClassifier {
 
     public DiagramCategory classify(
-            String className
+            ClassInfo classInfo
     ) {
 
-        String lower =
-                className.toLowerCase();
+        return switch (
+                classInfo.componentType()
+                ) {
 
-        if (lower.contains("service")) {
-            return DiagramCategory.SERVICES;
-        }
+            case SERVICE ->
+                    DiagramCategory.SERVICES;
 
-        if (lower.contains("repository")) {
-            return DiagramCategory.REPOSITORIES;
-        }
+            case REPOSITORY ->
+                    DiagramCategory.REPOSITORIES;
 
-        if (lower.contains("view")) {
-            return DiagramCategory.VIEWS;
-        }
+            case ENTITY ->
+                    DiagramCategory.ENTITIES;
 
-        if (lower.contains("entity")) {
-            return DiagramCategory.ENTITIES;
-        }
+            case CONTROLLER,
+                 REST_CONTROLLER ->
+                    DiagramCategory.CONTROLLERS;
 
-        if (lower.contains("controller")) {
-            return DiagramCategory.CONTROLLERS;
-        }
+            case VIEW ->
+                    DiagramCategory.VIEWS;
 
-        return DiagramCategory.OTHER;
+
+            default ->
+                    DiagramCategory.OTHER;
+        };
     }
 }
